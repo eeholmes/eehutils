@@ -1,0 +1,14 @@
+Package: eehutils
+Type: Package
+Title: Utility functions for papers and blogs
+Version: 1.0
+Date: 2017-12-12
+Depends: R (>= 3.1.0), knitr, rmarkdown, rticles
+Suggests: xtable
+Author: Eli Holmes, NOAA, Seattle, USA
+Maintainer: Elizabeth Holmes - NOAA Federal <eli.holmes@noaa.gov>
+Description: Various helper functions.
+License: GPL-2
+LazyData: yes
+BuildVignettes: yes
+Remotes: github::rstudio/rticles
