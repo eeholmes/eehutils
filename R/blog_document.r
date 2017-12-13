@@ -3,15 +3,14 @@ jekyll_md_document = function (toc = FALSE, toc_depth = 3, fig_width = 7, fig_he
                                 hard_line_breaks = TRUE, pandoc_args = NULL, html_preview = TRUE) 
 {
   require(rmarkdown)
-  require(stringr)
-  pandoc_args <- c(pandoc_args, "--mathjax", "--template", pandoc_path_arg(paste(system.file(package="eehutils"),"/rmarkdown/templates/jekyll_md_document/resources/default.md",sep="")))
+  pandoc_args <- c(pandoc_args, "--template", pandoc_path_arg(paste(system.file(package="eehutils"),"/rmarkdown/templates/jekyll_md_document/resources/default.md",sep="")))
   pandoc2 <- rmarkdown:::pandoc2.0()
   variant <- if (pandoc2) 
     "gfm"
   else "markdown_github"
   if (!hard_line_breaks) 
     variant <- paste0(variant, "-hard_line_breaks")
-  variant <- paste0(variant, "-ascii_identifiers+tex_math_dollars+raw_tex")
+  variant <- paste0(variant, "-ascii_identifiers")
   format <- md_document(variant = variant, toc = toc, toc_depth = toc_depth, 
                         fig_width = fig_width, fig_height = fig_height, dev = dev, 
                         df_print = df_print, includes = includes, md_extensions = md_extensions, 
