@@ -11,7 +11,7 @@ jekyll_md_document = function (toc = FALSE, toc_depth = 3, fig_width = 7, fig_he
   else "markdown_github"
   if (!hard_line_breaks) 
     variant <- paste0(variant, "-hard_line_breaks")
-  variant <- paste0(variant, "-ascii_identifiers+tex_math_dollars+raw_tex")
+  variant <- paste0(variant, "-ascii_identifiers+tex_math_dollars")
   format <- md_document(variant = variant, toc = toc, toc_depth = toc_depth, 
                         fig_width = fig_width, fig_height = fig_height, dev = dev, 
                         df_print = df_print, includes = includes, md_extensions = md_extensions, 

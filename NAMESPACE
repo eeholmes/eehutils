@@ -1,3 +1,4 @@
 export(
-  jekyll_md_document
+  jekyll_md_document,
+  rmd_to_gfm
 )
