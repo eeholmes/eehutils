@@ -39,3 +39,4 @@ Temporary Items
 eehutils.Rproj
 .Rbuildignore
 .Rhistory
+.RData
