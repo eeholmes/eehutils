@@ -20,5 +20,6 @@ opts_chunk$set(fig.path=figDir)
 knit(inFile, output=outFile)
 opts_chunk$set(fig.path="figure/")
 pdfDir = here("posts","pdfs")
-if(pdf) render(inFile, output_format="pdf_document", output_dir=pdfDir, clean=TRUE)
+outFile = paste0(sub("Rmd","pdf",filename))
+if(pdf) render(inFile, output_file=outFile, output_format="pdf_document", output_dir=pdfDir, clean=TRUE)
 }
