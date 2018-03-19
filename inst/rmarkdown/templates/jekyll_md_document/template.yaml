@@ -1,8 +1,0 @@
-name: Jekyll Pages Document (Markdown)
-description: >
-  Template for Rmd file that will be published to jekyll created website 
-  on GitHub. Has a special header yaml.  This is an extension of 
-  github_document.  
-  The file that makes the changes is default.md in 
-  inst/rmarkdown/templates/jekyll_md_document/resources
-create_dir: false

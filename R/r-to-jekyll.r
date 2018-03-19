@@ -1,4 +1,3 @@
-#!/usr/bin/env Rscript
 rtojekyll=function(filename){
   require("knitr")
   require("here")
