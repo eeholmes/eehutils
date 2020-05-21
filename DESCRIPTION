@@ -5,8 +5,8 @@ Version: 2.1
 Date: 2018-3-19
 Depends: R (>= 3.1.0), knitr, rmarkdown, rticles
 Suggests: xtable
-Author: Eli Holmes, NOAA, Seattle, USA
-Maintainer: Elizabeth Holmes - NOAA Federal <eli.holmes@noaa.gov>
+Author: Eli Holmes, Seattle, USA
+Maintainer: Eli Holmes <eeholmes@uw.edu>
 Description: Various helper functions.
 License: GPL-2
 LazyData: yes

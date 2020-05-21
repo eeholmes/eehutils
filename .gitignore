@@ -40,3 +40,4 @@ eehutils.Rproj
 .Rbuildignore
 .Rhistory
 .RData
+R/*.history
